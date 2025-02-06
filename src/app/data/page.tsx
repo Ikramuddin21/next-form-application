@@ -71,7 +71,7 @@ const page = () => {
                 <td>{item.introduction}</td>
                 <td className="w-[160px]">
                   <div className="flex justify-center space-x-2">
-                    <Link href={`/edit-driver/${item.id}`}>
+                    <Link href={``}>
                       <button className="!bg-orange-700 text-white px-4 py-2 rounded">
                         Edit
                       </button>

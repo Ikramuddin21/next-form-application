@@ -5,7 +5,7 @@ This project form submission & data showing.
 ## Technologies Used
 
 - Next.js
-- JavaScript
+- TypeScript
 - Tailwind CSS
 - Ant Design
 
