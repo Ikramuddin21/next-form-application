@@ -1,0 +1,42 @@
+[
+  {
+    "id": "m6tiewy2mm8",
+    "name": "Carl Morse",
+    "email": "kyji@mailinator.com",
+    "phone": "9) 939-8267",
+    "salary": "15",
+    "status": "unemployed",
+    "introduction": "Nostrud nulla eos id sint reiciendis doloribus officia voluptas labore quia eu"
+  },
+  {
+    "id": "m6tifv0u4iw",
+    "name": "Ikram Uddin",
+    "email": "zotame@mailinator.com",
+    "phone": "01210210201",
+    "skills": [
+      "js",
+      "react",
+      "next"
+    ],
+    "experience": "mid",
+    "salary": "100",
+    "status": "unemployed",
+    "introduction": "Harum quam nulla dolor error expedita consequat Alias irure proident alias aut incididunt"
+  },
+  {
+    "id": "m6tiic1x2w4",
+    "name": "Nathaniel Knight",
+    "email": "nobufy@mailinator.com",
+    "phone": "4) 788-9703",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js"
+    ],
+    "experience": "Mid",
+    "salary": "98",
+    "status": "Unemployed",
+    "introduction": "Consequat Provident repudiandae accusantium quia assumenda ab aut sint et aut voluptatibus ea"
+  }
+]
