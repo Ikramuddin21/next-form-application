@@ -1,33 +1,25 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 "use client";
 import { Button, Form, FormProps, Input, message, Radio, Select } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import Link from "next/link";
 import { generateId } from "../../../helpers/generateId";
-
-type FieldType = {
-  name: string;
-  email: string;
-  phone: string;
-  skills?: string;
-  experience?: string;
-  status?: string;
-  salary?: number;
-  introduction?: string;
-};
+import { FieldType } from "../../../type/type";
 
 const page = () => {
   const id = generateId();
   const [form] = Form.useForm();
   const [messageApi, contextHolder] = message.useMessage();
 
+  // on finish
   const onFinish: FormProps<FieldType>["onFinish"] = async (values) => {
     const payload = {
       id,
       ...values,
     };
 
-    const res: any = await fetch("http://localhost:3000/api/save", {
+    const res = await fetch("/api/save", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -48,13 +40,6 @@ const page = () => {
       });
     }
   };
-  // errorInfo.values?.skills?.length < 3 &&
-  //   form.setFields({
-  //     skills: {
-  //       value: errorInfo.values.skills,
-  //       errors: [new Error("Select at least 3 skills")],
-  //     },
-  //   });
 
   const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (
     errorInfo
