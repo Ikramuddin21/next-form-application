@@ -1,20 +1,31 @@
 [
   {
-    "id": "m6tmscux0yu",
-    "name": "Karen Hampton",
-    "email": "mawiba@mailinator.com",
-    "phone": "8) 925-9565",
-    "salary": "18",
+    "id": "m6u5ufxmmms",
+    "name": "Nola Jimenez",
+    "email": "wule@mailinator.com",
+    "phone": "01212112100",
+    "skills": [
+      "React.js",
+      "JavaScript",
+      "Next.js"
+    ],
+    "salary": "53000",
     "status": "Unemployed",
-    "introduction": "Veniam facere rerum debitis fugit cumque esse ad dolor dolor reprehenderit deserunt id numquam tempor"
+    "introduction": "Sunt expedita a id nostrud possimus do error quia consequat Neque"
   },
   {
-    "id": "m6tnkoojrk5",
-    "name": "Jillian Brown",
-    "email": "regykequhi@mailinator.com",
-    "phone": "8) 945-3753",
-    "salary": "53",
+    "id": "m6u6a2857u8",
+    "name": "Kaseem Swanson",
+    "email": "ceqagiqiju@mailinator.com",
+    "phone": "01235265425",
+    "skills": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "experience": "Senior",
+    "salary": "14000",
     "status": "Employed",
-    "introduction": "Voluptatem Ea non aut natus veniam aspernatur do quo"
+    "introduction": "Pariatur Culpa natus delectus aspernatur eligendi"
   }
 ]

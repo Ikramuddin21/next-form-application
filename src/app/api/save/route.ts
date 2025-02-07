@@ -2,21 +2,24 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+export const runtime = "nodejs";
 const filePath = path.join(process.cwd(), "data.json");
 
 // post
 export async function POST(req: Request) {
   try {
-    const data = await req.json();
+    const newData = await req.json();
 
-    let fileData = [];
+    let existingData = [];
     if (fs.existsSync(filePath)) {
       const fileContent = fs.readFileSync(filePath, "utf-8");
-      fileData = JSON.parse(fileContent);
+      existingData = fileContent ? JSON.parse(fileContent) : [];
+    } else {
+      fs.writeFileSync(filePath, "[]", "utf-8");
     }
 
-    fileData.push(data);
-    fs.writeFileSync(filePath, JSON.stringify(fileData, null, 2));
+    existingData.push(newData);
+    fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2), "utf-8");
 
     return NextResponse.json(
       {
